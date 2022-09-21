@@ -1,0 +1,197 @@
+.register {
+    padding: 64px 0 96px 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        @include bigmobile {
+            flex-direction: column;
+        }
+    }
+
+    &__form {
+        width: 360px;
+
+        @include tablet {
+            width: 49%;
+        }
+
+        @include bigmobile {
+            width: 100%;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+
+    &__fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__legend {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000;
+        margin-bottom: 20px;
+    }
+
+    &__input-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    &__input {
+        padding: 13px 0px 16px 17px;
+        margin-bottom: 20px;
+    }
+
+
+
+
+    &__radio-wrapper {
+        display: flex;
+        align-items: center;
+        margin: 11px 0 33px;
+    }
+
+    &__radio {
+        z-index: 2;
+        opacity: 0;
+    }
+
+    &__radio-1 {}
+
+    &__radio-2 {}
+
+    &__radio-label {
+        position: relative;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        color: #000000;
+        margin-right: 47px;
+    }
+
+    &__radio-label::before {
+        content: "";
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        border: 1px solid $grey;
+        left: -25px;
+        top: -3px;
+    }
+
+
+    &__input-text {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+        margin-bottom: 39px;
+    }
+
+    &__button {
+        background: #F16D7F;
+        border: none;
+        padding: 16px 29px 17px 29px;
+    }
+
+    &__button a {
+        padding-right: 37px;
+        background-image: url(../img/arrow.svg);
+        background-repeat: no-repeat;
+        background-position: 92px;
+
+        color: #fff;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    &__loyalty {
+        width: 650px;
+
+        @include tablet {
+            width: 48%;
+        }
+
+        @include bigmobile {
+            width: 100%;
+            padding-top: 40px;
+        }
+
+        @include mobile {
+            width: 100%;
+            padding-top: 40px;
+        }
+    }
+
+    &__loyalty-title {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        /* identical to box height */
+
+
+        color: #000000;
+        text-transform: uppercase;
+        margin-bottom: 22px;
+
+        @include tablet {
+            margin-bottom: 32px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+
+    &__loyalty-text {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+
+        color: #000000;
+        margin-bottom: 21px;
+
+        @include tablet {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+
+    &__loyalty-list {}
+
+    &__loyalty-link {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+
+        color: #000000;
+        padding-left: 42px;
+        margin: 0px 0px 16px 0px;
+        background-image: url(../img/check.svg);
+        background-repeat: no-repeat;
+        background-position: 0 9px;
+
+        @include tablet {
+            font-size: 16px;
+            line-height: 19px;
+            background-position: 0 0;
+        }
+    }
+}
+
+
+.register__radio:checked+.register__radio-label::before {
+    background: $grey;
+}

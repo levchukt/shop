@@ -1,0 +1,133 @@
+.brand {
+    background-color: #F1E4E6;
+    margin: 0px 0px 65px 0px;
+
+    @include tablet {
+        margin: 0px 0px 20px 0px;
+    }
+
+    @include mobile {
+        margin: 0px 0px 64px 0px;
+    }
+
+    &__wrapper {
+        display: flex;
+
+        @include mobile {
+            display: block;
+        }
+    }
+
+    &__img {
+        @include tablet {
+            width: 50%;
+        }
+
+        @include mobile {
+            display: none;
+        }
+
+        @include bigmobile {
+            display: none;
+        }
+    }
+
+    &__man {
+        @include tablet {
+            height: auto;
+        }
+    }
+
+    &__heading-block {
+
+        display: flex;
+        padding: 81px;
+        align-items: center;
+
+        @include tablet {
+            padding-left: 39px;
+            padding-right: 0;
+        }
+
+        @include bigmobile {
+            padding: 148px 56px;
+        }
+
+        @include mobile {
+            padding: 148px 0;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__title {
+        position: relative;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+        color: #222222;
+        text-transform: uppercase;
+        padding-left: 28px;
+
+        @include tablet {
+            font-size: 44px;
+            line-height: 53px;
+        }
+
+        @include mobile {
+            font-size: 38px;
+            line-height: 46px;
+        }
+
+        @include bigmobile {
+            font-size: 38px;
+            line-height: 46px;
+        }
+    }
+
+    &__title::before {
+        content: "";
+        width: 12px;
+        height: 92px;
+        position: absolute;
+        background: #F16D7F;
+        top: 0;
+        left: 0;
+
+        @include tablet {
+            height: 70px;
+            top: 10px;
+        }
+
+        @include mobile {
+            height: 61px;
+        }
+    }
+
+    &__subtitle {
+        display: block;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        color: #222222;
+
+        @include tablet {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        @include bigmobile {
+            font-size: 20px;
+            line-height: 23px;
+        }
+
+        @include mobile {
+            font-size: 20px;
+            line-height: 23px;
+        }
+    }
+
+    &__subtitle-pink {
+        color: #F16D7F;
+    }
+}

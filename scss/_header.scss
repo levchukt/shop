@@ -1,0 +1,169 @@
+.header {
+    background-color: $header-color;
+    position: relative;
+
+    &__container {
+        max-width: 1140px;
+        margin: 0 auto;
+
+        @include tablet {
+            max-width: 93%;
+        }
+
+        @include mobile {
+            width: 91%;
+        }
+    }
+
+
+    &__wrapper {
+        min-height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include tablet {
+            min-height: 74px;
+        }
+    }
+
+    &__logo {
+        margin-right: 33px;
+    }
+
+    &__search:hover path {
+        fill: $pink;
+    }
+
+    &__controls {
+        display: flex;
+        align-items: center;
+    }
+
+    &__button-icon {
+        background-color: transparent;
+        border: none;
+        margin: 0px 33px 0px 0px;
+
+        @include mobile {
+            margin: 0;
+        }
+    }
+
+    &__menu-icon {
+        fill: #fff;
+    }
+
+    &__button-icon:hover path {
+        fill: $pink;
+    }
+
+
+
+
+    &__person-icon {
+        margin: 0px 33px 0px 0px;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__cart-icon {
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__person-icon:hover path {
+        fill: $pink;
+    }
+
+    &__cart-icon:hover path {
+        fill: $pink;
+    }
+
+
+    &__menu {
+        display: none;
+        position: absolute;
+        min-height: 100vh;
+        right: 0;
+        z-index: 5;
+        background: #FFFFFF;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
+        @include mobile {
+            width: 100%;
+        }
+
+        @include bigmobile {
+            width: 100%;
+        }
+    }
+
+    &__menu-wrapper {
+        position: relative;
+        padding: 37px 73px 163px 33px;
+
+    }
+
+    &__menu-close-button {
+        position: absolute;
+        background: transparent;
+        border: none;
+        top: 16px;
+        right: 16px;
+    }
+
+    &__menu-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+    }
+
+    &__menu-list {}
+
+    &__menu-link {}
+
+    &__menu-link-heading {
+        font-size: 14px;
+        line-height: 17px;
+        color: #F16D7F;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+        margin-top: 20px;
+    }
+
+    &__inner-list {}
+
+    &__inner-link {
+        padding-left: 21px;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 11px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__inner-link a {
+        color: #6F6E6E;
+    }
+}
+
+.header {}
+
+@media(max-width: $tablet-width) {
+    .container {
+        width: 96%;
+    }
+}
+
+.display-block {
+    display: block;
+}

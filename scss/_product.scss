@@ -1,0 +1,171 @@
+
+.small-cnt {
+    max-width: 71%;
+    margin: 0 auto;
+    @include tablet{
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+
+.description {
+    margin-bottom: 192px;
+    
+    &__container {
+        padding: 64px 250px;
+        border: 1px solid #EAEAEA;
+        margin-top: -64px;
+        background-color: #fff;
+        position: relative;
+        z-index: 2;
+        @include tablet{
+            padding: 64px;
+            margin-top: 0px;
+        }
+    }
+    
+    &__item {}
+
+    &__options {}
+
+    &__button-wrapper {
+        margin-bottom: 0;
+    }
+
+    &__button {
+        &:hover {
+                color: #fff;
+        }
+    }
+}
+
+.visually-hidden {}
+
+.item-description {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgba(234, 234, 234, 1);
+    margin-bottom: 64px;
+    &__collection {
+        position: relative;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        
+        color: #F16D7F;
+
+        margin-bottom: 27px;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 63px;
+            height: 3px;
+            background-color: #EF5B70;
+            bottom: -12px;
+            left: 27%;
+        }
+    }
+
+    &__name {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 48px;
+        color: #4D4D4D;
+    }
+
+    &__about {
+        max-width: 555px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        
+        color: #5E5E5E;
+        margin-bottom: 32px;
+    }
+
+    &__price {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        
+        color: #EF5B70;
+        margin-bottom: 64px;
+    }
+}
+
+.options-description {
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: center;
+    &__items {
+        display: flex;
+        gap: 22px;
+    }
+
+    &__item {
+        font-size: 14px;
+        line-height: 17px;
+        
+        color: #6F6E6E;
+        
+    }
+}
+
+.btn{
+    
+    @include bigmobile {
+            font-size: 10px;
+            line-height: 12px;
+    }
+    @include mobile{
+        padding: 0;
+        }
+}
+
+.last-item{
+    @include tablet{
+        display: none;
+    }
+}
+
+// ==================================
+
+.products {
+    margin-bottom: 128px;
+    @include bigmobile{
+        margin-bottom: 64px;
+    }
+    &__container {
+    }
+    &__item-wrapper{
+        background-color: #F8F8F8;
+        
+    }
+    &__item-heading{
+        text-align: left;
+    }
+    &__item-text{
+        text-align: left;
+
+    }
+    &__item-price{
+        text-align: left;
+    }
+}
+
+.small-cnt {}
+
+.container {}
+
+.text-center {
+    padding: 0;
+}
+
+.row {}
+
+.col {}

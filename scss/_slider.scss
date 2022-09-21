@@ -1,0 +1,57 @@
+.slider{
+    @include bigmobile{
+        padding: 85px 0px;
+        background-color: #F7F7F7;
+    }
+}
+
+.slide-img {
+    min-height: 777px;
+    background: #F7F7F7;
+    @include tablet{
+        display: none;
+    }
+    
+}
+
+.tablet-slide-img{
+    display: none;
+    @include tablet{
+        display: block;
+        min-height: 624px;
+    }
+    @include bigmobile {
+        display: none;
+    }
+    }
+
+
+.mobile-slide-img{
+    display: none;
+    @include bigmobile{
+        display: block;
+        
+    }
+}
+
+
+
+.i-cont {
+    padding: 13px 17px;
+    background: $grey;
+}
+
+.fa-solid {
+    font-weight: 700;
+    font-size: 21px;
+    color: $header-color;
+
+}
+
+.carousel-control-prev {
+    justify-content: flex-start;
+}
+
+.carousel-control-next {
+    justify-content: flex-end;
+}
